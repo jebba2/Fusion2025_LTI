@@ -1,0 +1,16 @@
+Register a Tool:
+ 
+Domain: https://learningtools.gsu.edu
+ 
+Redirect URLs: https://learningtools.gsu.edu/smartlti/smartpost
+ 
+OpenID Connect Login URL: https://learningtools.gsu.edu/smartlti/lti/login
+ 
+Keyset URL: https://learningtools.gsu.edu/smartlti/lti/jwks
+ 
+Create Link Links
+ 
+URL: https://learningtools.gsu.edu/smartlti/smartpost
+ 
+ 
+Please send the Client ID and Deployment ID

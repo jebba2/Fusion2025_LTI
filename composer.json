@@ -1,0 +1,57 @@
+{
+  "name": "gsu-dle/lti-1.3-slim-template",
+  "homepage": "https://github.com/gsu-dle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Melody Forest",
+      "email": "mforest@gsu.edu"
+    },
+    {
+      "name": "Jeb Barger",
+      "email": "jbarger@gsu.edu"
+    }
+  ],
+  "require": {
+    "gsu-dle/lti-1.3-slim": "^1.1.2",
+    "php": "^8.1",
+    "gsu-dle/d2l-api-tools": "^1.0.8"
+  },
+  "require-dev": {
+    "phpstan/extension-installer": "^1.1",
+    "phpstan/phpstan": "^1.9",
+    "phpstan/phpstan-phpunit": "^1.3",
+    "phpstan/phpstan-strict-rules": "^1.3",
+    "phpunit/phpunit": "^9.5",
+    "squizlabs/php_codesniffer": "^3.7"
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "GAState\\MyLTIApp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GAState\\MyLTIApp\\": "tests/src/"
+    }
+  },
+  "scripts": {
+    "phpcs": [
+      "phpcs -p --colors --standard=PSR12 src public tests/src"
+    ],
+    "phpstan": [
+      "phpstan clear-result-cache",
+      "phpstan analyse -c phpstan.neon"
+    ],
+    "test": "phpunit",
+    "start": [
+      "Composer\\Config::disableProcessTimeout",
+      "@php -S localhost:8080 -t public"
+    ]
+  }
+}

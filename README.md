@@ -1,2 +1,1 @@
-# Fusion2025_LTI
-Example Code for Fusion 2025 LTI Presentation
+# gsu-dle/lti-1.3-slim-template
