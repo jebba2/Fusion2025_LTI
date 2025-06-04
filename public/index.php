@@ -12,7 +12,7 @@ use GAState\MyLTIApp\Env     as Env;
 use GAState\Web\LTI\Slim\App as BaseApp;
 
 (function (mixed $baseDir, mixed $baseURI) {
-    $baseDir = "/data/www/demo-lti-tool3";
+    $baseDir = "/data/www/fusion2025";
     $baseURI = dirname($baseURI);
     /** @var Throwable|null $exception */
     $exception = null;

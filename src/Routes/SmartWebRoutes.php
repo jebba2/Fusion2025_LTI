@@ -26,7 +26,7 @@ class SmartWebRoutes
         );
 
         $routes->get(
-            '/smarttest',
+            '/test',
             [SmartController::class,
             'smartTest']
         );
